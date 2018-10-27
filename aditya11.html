@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function check()
+        {
+           // document.write("function call");
+             var x = document.forms["login"]["ename"].value;
+            var y = document.forms["login"]["pass"].value;
+            document.write(x);
+            document.write(y);
+            if (x == "aditya@gmail.com" && y == "aditya11")
+            {
+                alert("login successful");
+                return true;
+            }
+            else
+            {
+                document.write("login fail");
+                return false;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+ <form name ="login">
+     <table>
+         <tr>
+             <td>Emailid</td>
+             <td><input type="email"name="ename" /></td>
+             <td>Password</td>
+             <td><input type="password" name="pass" /></td>
+              <td><input type="submit" value="login" onclick="return check();"/>
+
+              </td>
+         </tr>
+     </table>
+ </form>  
+</body>
+</html>

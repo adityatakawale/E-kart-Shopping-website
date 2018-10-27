@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*$("#flip").click(function () {
+                $("#panel").slideDown("slow");
+            });
+           $("#flip").click(function () {
+                $("#panel").slideUp("slow");
+            });*/
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+
+    </script>
+    <style>
+        #button1 {
+            width:250px;
+            height:80px;
+            background-color:orange;
+        }
+#panel, #flip {
+    padding: 5px;
+    text-align:left;
+    background-color:lightslategrey;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+    <id="Td1"><img src="images/iphone6s.jpg" height="400"width="400"/>
+        <figcaption align="center"><b><font color="black">IPhone 6s</font></a></b></figcaption>
+<div id="flip">Specification</div>
+<div id="panel">
+    <table>
+    <tr>
+    <td>• 5MP primary camera with auto focus, LED flash and 2MP front facing camera</td>
+        </tr>
+        <tr>
+    <td>• 4.5-inch (11.43 centimeters) capacitive touchscreen with 480 x 800 pixels resolution, 207 ppi pixel density and 16M color support</td>
+        </tr>
+    <tr>
+    <td>• Android v4.4.4 KitKat operating system with 1.2GHz Cortex-A53 MSM8916 Qualcomm Snapdragon 410 quad core processor, Adreno 306 GPU, 1GB RAM, 8GB internal memory expandable up to 64GB and dual SIM (GSM+GSM)</td>
+        </tr>
+    <tr>
+    <td>• 2000mAH lithium-ion battery</td>
+        </tr>
+    <tr>
+    <td>• 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</td>   
+        </tr>
+        <td id="image2"><img src="images/iphone6s.jpg" height="150"width="150"/>
+    </table>
+    
+</div>
+        <input type="button" id="button1" value="Buy Now"/>
+</body>
+</html>
